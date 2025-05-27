@@ -1,0 +1,24 @@
+{"problem": "User can't reset password via email link.", "resolution": "Asked user to clear browser cache and resend the reset link. Issue resolved."}
+{"problem": "Account locked after multiple failed login attempts.", "resolution": "Unlocked the account via admin panel and suggested enabling 2FA."}
+{"problem": "Payment failed due to expired credit card.", "resolution": "Informed user to update card info. Payment succeeded after retry."}
+{"problem": "Duplicate charge on credit card.", "resolution": "Issued a refund for the duplicate transaction and apologized."}
+{"problem": "Application crashes on startup.", "resolution": "Checked logs, found corrupted config. Reinstalled app, issue resolved."}
+{"problem": "Cannot connect to Wi-Fi network.", "resolution": "Guided user to restart router and device. Connectivity restored."}
+{"problem": "Printer not responding.", "resolution": "Verified cable connections and driver. Reinstalled driver, printing resumed."}
+{"problem": "Software update failed.", "resolution": "Cleared temporary files and retried update. Update completed successfully."}
+{"problem": "Email client not sending emails.", "resolution": "Checked SMTP settings and firewall. Adjusted firewall rule, emails sent."}
+{"problem": "External hard drive not recognized.", "resolution": "Checked drive's power and USB port. Tried different port, drive detected."}
+{"problem": "Laptop overheating during use.", "resolution": "Advised user to clean vents and use on hard surface. Temperature normalized."}
+{"problem": "Lost access to two-factor authentication device.", "resolution": "Verified identity through security questions and reset 2FA."}
+{"problem": "Unable to play video files.", "resolution": "Installed missing codecs and updated media player. Videos play correctly now."}
+{"problem": "Website content not loading correctly.", "resolution": "Asked user to clear browser cache and cookies. Content displayed properly."}
+{"problem": "Mouse cursor disappears frequently.", "resolution": "Updated display drivers and adjusted pointer settings. Issue resolved."}
+{"problem": "Cannot access shared network drive.", "resolution": "Checked network permissions and firewall rules. Added user to share group, access granted."}
+{"problem": "Application update loop after restarting.", "resolution": "Manually deleted update cache and re-ran update. Update completed successfully."}
+{"problem": "Desktop icons are too large/small.", "resolution": "Adjusted display scaling settings in Windows. Icons resized correctly."}
+{"problem": "External webcam not detected by laptop.", "resolution": "Checked USB port, reinstalled webcam drivers from manufacturer. Webcam detected."}
+{"problem": "Email attachments are not opening.", "resolution": "Verified file associations and security software. Disabled antivirus temporarily, attachments opened."}
+{"problem": "Computer running very slow.", "resolution": "Ran disk cleanup, defragmented drive, and removed unused programs. Performance improved."}
+{"problem": "Keyboard keys are not working.", "resolution": "Cleaned under keys, checked for software conflicts. Reinstalled keyboard driver, keys functional."}
+{"problem": "Battery draining quickly on laptop.", "resolution": "Checked power plan settings, identified background apps. Adjusted power plan, uninstalled rogue app."}
+{"problem": "Audio not working on computer.", "resolution": "Checked speaker connections, updated audio drivers. Sound restored after driver update."}
