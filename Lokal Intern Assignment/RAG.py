@@ -61,7 +61,7 @@ if tokenizer.pad_token is None:
 
 # Define the RAG bot function
 def support_bot(user_query, top_k=2):
-    # 1. Retrieval
+    # Retrieval
     query_embedding = embedder.encode([user_query])[0]
     distances, indices = index.search(np.array([query_embedding]), top_k)
     
@@ -76,7 +76,7 @@ def support_bot(user_query, top_k=2):
     context_resolutions = [pair["resolution"] for pair in retrieved_pairs]
     context_text = "\n".join(context_resolutions)
 
-    # 2. Augmentation & Generation
+    #  Augmentation & Generation
     prompt = f"""You are a concise support assistant.
 Your task is to provide a solution to the user's issue.
 Base your answer **strictly and only** on the provided past resolutions.
@@ -106,7 +106,7 @@ Resolution:"""
     
     generated_text = response[0]["generated_text"]
     
-    # 3. Post-processing: Extract only the part after "Resolution:"
+    # Post-processing: Extract only the part after Resolution:
     final_answer = "I apologize, but I cannot provide a specific resolution based on the available past tickets for this issue." 
     
     answer_prefix = "Resolution:"
@@ -132,8 +132,7 @@ Resolution:"""
            any(char.isalpha() for char in temp_answer):
             final_answer = temp_answer
             
-    # Try to enforce direct answer if a clear match is found in retrieval
-    # This is where the fix goes: encode before calculating similarity
+    # Try to give direct answer if a clear match is found in retrieval
     user_query_embedding = embedder.encode([user_query.lower()])[0] # Encode user query
     for pair in retrieved_pairs:
         problem_embedding = embedder.encode([pair["problem"].lower()])[0] # Encode retrieved problem
